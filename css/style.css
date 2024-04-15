@@ -1,0 +1,199 @@
+@import '../scss/_settings.scss';
+.homepage{
+    background-image: url("../images/image.png");
+    background-position: center; 
+    height:50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .logo{
+        height: 80px;
+        padding-left: 110px;
+        padding-top: 10px;
+    }
+    .top-bar{
+        background-color: transparent;
+    
+        
+        .top-bar-right > .menu{
+            background-color: inherit; 
+            color:white; 
+
+            .contact{
+                color:orange;
+                border-bottom: 1px solid orange;
+            }
+            
+    
+        }
+        
+        .menu li a{
+            color: white;
+
+        }
+        
+        
+        .button{
+            color: white;
+            margin-right: 100px;
+            margin-left: 160px;
+            border-radius: 20px;
+        }
+    
+        
+    }
+    .content{
+        color:white;
+        text-align: center;
+        /* font-size: 70px; */
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 160px;
+
+        
+        
+        
+    }
+}
+.contactus{
+   
+    .title{
+        font-family: playfair;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+        color: rgba(2, 55, 2, 0.958);
+        border-bottom:1px solid black ;
+        
+        
+    }
+    .about{
+        margin-top: 20px;
+        
+    }
+    .first{
+        margin-left: 2px;
+        padding-right: 30px;
+
+        .image{
+            border-radius: 20px;
+            width: 330px;
+            height: 300px;   
+        }
+        .contacts{
+            margin-top: 30px;;
+        }
+    }
+    
+    
+    .second{
+        padding-left: 30px;
+        
+        
+    
+        .button{
+            color: white;
+            padding-left: 35px;
+            padding-right: 35px;
+            border-radius: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 162px;
+            padding: 6px; 
+            background-color: #e6e6e6;
+            
+        
+        }
+
+        textarea {
+            width: 500px; 
+            background-color: #e6e6e6;
+
+        
+            
+        }
+    }
+    
+      
+
+}
+.others{
+    background-color:rgba(2, 56, 40, 0.958) ;
+    text-align: center;
+    color:white;
+    padding-bottom: 40px;
+    
+
+    .image{
+        
+        margin-top: 50px;
+        height:80px;
+        padding-bottom: 10px;  
+        
+    } 
+    .second{
+        padding-top: 40px;
+        
+
+        .one,.two,.three{
+            padding-left:10px;
+        }
+        .input-with-button {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .input-with-button input[type="email"] {
+            padding-right: 40px; /* Adjust as needed to accommodate the button */
+            border: none; /* Remove border */
+            background-color: rgba(0, 0, 0, 0.1); /* Transparent background color */
+            border-radius: 20px; /* Rounded corners */
+            width:400px;
+            height: 50px;
+            padding: 20px;
+        }
+    
+        .input-with-button button {
+            position: absolute;
+            top: 5%;
+            right: 2%;
+            border-radius: 20px;
+        }
+    }
+    .three {
+        padding-left: 20px;
+        ul{
+                margin-left: 100px;
+                li{
+                    padding-left:20px
+                
+                }  
+        }
+             
+            .fa{
+                padding-left: 40px;
+                border:1px solid white;
+                border-radius:20px;
+                padding: 8px;
+            }
+    }
+    
+      
+    
+}
+footer{
+    background-color:rgba(1, 34, 24, 0.958) ; 
+    color: white;
+    .row{
+        padding: 5px;
+        .menu li a{
+            color: white;
+
+        }
+        .copy{
+            padding-top:10px;
+        }
+    }
+}

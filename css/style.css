@@ -1,4 +1,14 @@
 @import '../scss/_settings.scss';
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+*{
+    font-family:"Roboto";
+
+}
+/* Add this CSS to your existing stylesheet */
+
+/* Responsive styles for small screens */
+
+  
 .homepage{
     background-image: url("../images/image.png");
     background-position: center; 
@@ -9,20 +19,25 @@
 
     .logo{
         height: 80px;
-        padding-left: 110px;
-        padding-top: 10px;
+        padding-left: 100px;
+        /* padding-top: 4px; */
     }
     .top-bar{
         background-color: transparent;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
     
         
         .top-bar-right > .menu{
             background-color: inherit; 
             color:white; 
 
+
             .contact{
                 color:orange;
-                border-bottom: 1px solid orange;
+                border-bottom: 1.5px solid rgb(247,151,33);
+                
             }
             
     
@@ -39,6 +54,7 @@
             margin-right: 100px;
             margin-left: 160px;
             border-radius: 20px;
+            margin-top: 30px;
         }
     
         
@@ -46,8 +62,8 @@
     .content{
         color:white;
         text-align: center;
-        /* font-size: 70px; */
-        font-family: 'Times New Roman', Times, serif;
+        font-size: 80px;
+        font-weight: 700;
         margin-top: 160px;
 
         
@@ -56,60 +72,127 @@
     }
 }
 .contactus{
-   
+    
+   padding-bottom:48px;
     .title{
-        font-family: playfair;
         text-align: center;
         margin-top: 50px;
         font-size: 24px;
-        color: rgba(2, 55, 2, 0.958);
-        border-bottom:1px solid black ;
-        
-        
+        color: rgb(15,75, 54);
+        padding-bottom: -30px;  
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal; 
+    }
+    svg{
+        text-align: center;
+        margin-left: -90px;
+        margin-top: -100px;
     }
     .about{
         margin-top: 20px;
         
     }
+    .line{
+        text-decoration: underline;
+        padding-bottom: 5px;
+    }
     .first{
-        margin-left: 2px;
-        padding-right: 30px;
+        margin-left: 190px;
 
         .image{
-            border-radius: 20px;
+            border-radius: 10px;
             width: 330px;
             height: 300px;   
         }
         .contacts{
-            margin-top: 30px;;
+            margin-top: 40px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 14px;
+
+           
+        }
+        .gray{
+            color:gray;
         }
     }
     
     
     .second{
-        padding-left: 30px;
+        padding-bottom: 45px;
+        color: #035c4f;
+        font-family: "Roboto";
+        font-weight:300;
+        font-style: normal;
+        margin-left: -210px;
+        padding-right:-200px;
         
-        
+        .tit{
+            font-size: 14px;
+            font-weight: 400;
+            color:rgb(85,86,86);
+        }
     
         .button{
             color: white;
-            padding-left: 35px;
-            padding-right: 35px;
+            padding:10px;
+            padding-left: 40px;
+            padding-right: 40px;
             border-radius: 20px;
+            margin-top: 10px;
+            /* background-color: rgba(194, 120, 3); */
+
         }
         input[type="text"],
         input[type="email"],
         select {
-            width: 162px;
+            width: 210px;
             padding: 6px; 
-            background-color: #e6e6e6;
-            
+            background-color: #fafafa;
+            border: 1px solid #e2e1dd;
         
         }
+        select{
+            font-size: 12px;
+            color:darkgray;
+        }
+        .lbs{
+            color:#035c4f;
+            font-size: 12px;
+        }
+        input[type="checkbox"]{
+            border: 1px solid #e2e1dd;
+            height: 20px;
+            width: 20px;
+            margin-top: 5px;
+        }
+        .down{
+            margin-left: -30px;
+
+        }
+        
+        
+        .lb{
+            
+            font-size: 13px;
+            font-weight: 300;
+            height: 27px;
+            text-align: left;
+
+        }
+        
+        .columns{
+            margin-left: -150px;
+        }
+        
 
         textarea {
-            width: 500px; 
-            background-color: #e6e6e6;
+            width: 450px; 
+            height:130px;
+            background-color: #fafafa;
+            border: 1px solid #e2e1dd
 
         
             
@@ -120,36 +203,62 @@
 
 }
 .others{
-    background-color:rgba(2, 56, 40, 0.958) ;
+    background-color:rgb(2,92,80) ;
     text-align: center;
     color:white;
     padding-bottom: 40px;
+    font-family: "Roboto";
+
+    .weight{
+        font-weight: 500;
+        font-size: 13px;
+    }
     
 
     .image{
         
         margin-top: 50px;
-        height:80px;
+        height:140px;
         padding-bottom: 10px;  
         
     } 
+    hr{
+        color:white;
+        border-top-width: 1px;
+        /* margin:0 */
+
+    }
+    
     .second{
         padding-top: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         
-
         .one,.two,.three{
             padding-left:10px;
+            
+        }
+        .nai{
+            margin-left:-55px
+        }
+        .align{
+            text-align: left;
+            margin-left: 35px;
+
         }
         .input-with-button {
             position: relative;
             display: inline-block;
         }
-    
+        .buttons{
+            background-color: rgb(249,174,48);
+        }
         .input-with-button input[type="email"] {
             padding-right: 40px; /* Adjust as needed to accommodate the button */
             border: none; /* Remove border */
-            background-color: rgba(0, 0, 0, 0.1); /* Transparent background color */
-            border-radius: 20px; /* Rounded corners */
+            background-color: #0d5248; /* Transparent background color */
+            border-radius: 30px; /* Rounded corners */
             width:400px;
             height: 50px;
             padding: 20px;
@@ -157,9 +266,17 @@
     
         .input-with-button button {
             position: absolute;
-            top: 5%;
+            top: 10%;
             right: 2%;
+            padding:10px;
+            padding-left: 15px;
+            padding-right: 15px;
             border-radius: 20px;
+            /* background-color: rgba(194, 120, 3) */
+
+        }
+        button{
+            color: white;
         }
     }
     .three {
@@ -171,12 +288,23 @@
                 
                 }  
         }
+        
              
             .fa{
-                padding-left: 40px;
+                
+                padding:5px;
                 border:1px solid white;
                 border-radius:20px;
-                padding: 8px;
+                
+                ;
+            }
+            .fa-facebook-f{
+                padding-left: 8px;
+                padding-right: 8px;
+                text-align: center;
+            }
+            img{
+                margin:-4px;
             }
     }
     
@@ -184,10 +312,11 @@
     
 }
 footer{
-    background-color:rgba(1, 34, 24, 0.958) ; 
+    background-color:rgb(6,55,48) ; 
     color: white;
+    font-size: 11px;
     .row{
-        padding: 5px;
+        padding: 8px;
         .menu li a{
             color: white;
 

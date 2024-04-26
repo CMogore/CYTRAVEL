@@ -5,6 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYTRAVEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/f97f3942a8.js" crossorigin="anonymous"></script>
@@ -15,7 +18,7 @@
         <!--header-->  
         <div class="top-bar ">
             <div class="top-bar-left ">
-                <img class="logo", src="images/cytravel_logo.png" alt="cytonn logo">
+                <img class="logo", src="images/lg.png" alt="cytonn logo">
             </div>
     
             <div class="top-bar-right  ">
@@ -46,42 +49,53 @@
     <section  class="contactus">
         <div class="row small-12 medium-4">
             <div class="column ">
-              <p class="title">GET IN TOUCH</p>
+              <p class="title">GET IN TOUCH!</p>
+              <svg width="700" height="60">
+                <!-- Arrow body -->
+                <line x1="40" y1="40" x2="600" y2="40" style="stroke:#e2e1dd;stroke-width:1" />
+              
+                <!-- Circles at ends -->
+                <circle cx="40" cy="40" r="5" fill="white" style="stroke:#e2e1dd;stroke-width:1"/>
+                <circle cx="600" cy="40" r="5" fill="white" style="stroke:#e2e1dd;stroke-width:1" />
+              </svg>
+              
             </div>
         </div>
           
-        <div class="row about small-12 medium-6">
-            <div class=" column  first">
+        <div class="row about ">
+            <div class=" column  first  responsive-embeded ">
               <img class="image" src="images/mountain.png">
               <div class="contacts">
-                <p><span class="fa fa-mobile-screen "></span><strong> Telephone</strong> +254(0) 712 101 222</p>
-                <p><span class="fa fa-location-dot "></span><strong> Nairobi office</strong> Church Road, Westlands</p>
-                <p><span class="fa fa-envelope "></span><strong> Email</strong> cysuitestravel@cysuites.com</p>
+                <p><span class="gray fa fa-mobile-screen "></span><strong> Telephone:</strong><span class="line"> +254(0) 712 101 222</span><br>
+                <span class="fa fa-location-dot "></span><strong> Nairobi office:</strong> Church Road, Westlands<br>
+                <span class="gray fa fa-envelope "></span><strong> Email:</strong> cysuitestravel@cysuites.com</p>
               </div>
             </div>
           
-            <div class="column second">
-              <p>
+            <div class="column second  responsive-embeded ">
+              <p class="tit">
                 If you would like to send us an email please use the form below 
               </p>
               <form action="#" method="POST">
-                <div class="row">
-                    <div class="small-12 medium-6 columns">
-                        <label for="first-name">First Name:</label>
+        
+                <div class="row  ">
+                    <div class=" column">
+                        <label for="first-name "class="lbs">First Name:</label>
                         <input type="text" id="first-name" name="first-name" required>
                     </div>
-                    <div class="small-12 medium-6 columns">
-                        <label for="last-name">Last Name:</label>
+                    <div class=" columns">
+                        <label for="last-name "class="lbs">Last Name:</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 medium-6 columns">
-                        <label for="email">Email:</label>
+                    <div class=" column">
+                        <label for="email"class="lbs">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="small-12 medium-6 columns">
-                        <label for="enquiry">Enquiry:</label>
+                    <div class=" columns">
+                    
+                    <label for="enquiry"class="lbs">Enquiry: </span></label>
                         <select id="enquiry" name="enquiry">
                             <option value="" selected disabled>Select Your Enquiry</option>
                             <option value="General">General</option>
@@ -89,30 +103,32 @@
                             <option value="Support">Support</option>
                             
                         </select>
+                        <span class="down fa fa-chevron-down "></span>
+
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 columns">
-                        <label for="message">Message:</label>
+                    <div class=" column">
+                        <label for="message" class="lbs">Message:</label>
                         <textarea id="message" name="message" required rows="6"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 columns">
-                        <label>
-                            <input type="checkbox" id="subscribe-newsletter" name="subscribe-newsletter"> I accept CyTravel's terms & Conditions
+                    <div class=" column">
+                        <input type="checkbox" id="subscribe-newsletter" name="subscribe-newsletter">
+                        <label class="lb" for="subscribe-newsletter">I accept CyTravel's <span class="line">terms & Conditions</span></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" column">
+                        
+                        <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
+                        <label class="lb" for="terms-agreement">Please send me exclusive updates from the travel journal
                         </label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 columns">
-                        <label>
-                            <input type="checkbox" id="terms-agreement" name="terms-agreement" required> Please send me exclusive updates from the travel journal
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 columns">
+                    <div class=" column">
                         <button type="submit" class="button warning">Submit</button>
                     </div>
                 </div>
@@ -127,36 +143,36 @@
         <div class="row small-12 medium-4">
             <div class="column ">
                 <img class="image" src="images/cytravel_logo_white.png">
-                <hr>
             </div>
         </div>
+        <hr>
         <div class="second row">
            
             <div class="small-12 medium-4 columns one">
-                <p>ADDRESS<br> P.O Box 20695-00200, <br> Nairobi, Kenya</p>
-                <p>TELEPHONE<br>+254(0) 712 101 222 </p>
+                <p ><span class="weight">ADDRESS</span><br> P.O Box 20695-00200,<br> <span class="nai">Nairobi, Kenya</span></p>
+                <p ><span class="weight">TELEPHONE</span><br><span class="">Phone +254(0) 712 101 222</span> </p>
             </div>
             
             <div class="small-12 medium-4 columns two">
-                <p>NEWSLETTER</p>
-                <p>Sign in below to receive CyTravel newsletter <br>and occassional updates from our journal</p>
+                <p class="weight">NEWSLETTER</p>
+                <p class="align">Sign in below to receive CyTravel newsletter <br>and occassional updates from our journal</p>
                 <form>
-                    <div class="input-with-button">
+                    <div class="input-with-button responsive-embeded">
                         <input type="email" placeholder="Enter your email">
-                        <button type="submit" class="button warning">Subscribe</button>
+                        <button type="submit" class="text-white buttons ">Subscribe</button>
                     </div>
                 </form>
             </div>
             
             <div class="small-12 medium-4 columns three">
-                <p class="text-center">SOCIAL</p>
+                <p class="text-center weight">SOCIAL</p>
                 <p>
-                    <span class="fa fa-facebook "></span>
+                    <span class=" fa fa-facebook-f "></span>
                     <span class=" fa fa-twitter "></span>
                     <span class=" fa fa-instagram "></span>
                     <span class=" fa fa-linkedin "></span>
-                  </p>
-                <p class="text-center">We accept</p>
+                </p>
+                <p class="text-center weight">WE ACCEPT</p>
                 <ul class="menu payments">
                     <li><img src="images/mpesa_white.png" alt=""></li>
                     <li><img src="images/visa_white.png" alt=""></li>
